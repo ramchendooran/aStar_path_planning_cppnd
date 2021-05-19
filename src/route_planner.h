@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>  // for sort
 #include "route_model.h"
 
 
@@ -19,6 +20,7 @@ class RoutePlanner {
     float CalculateHValue(RouteModel::Node const *node);
     std::vector<RouteModel::Node> ConstructFinalPath(RouteModel::Node *);
     RouteModel::Node *NextNode();
+    void CellSort(std::vector<RouteModel::Node*> *v);
 
   private:
     // Add private variables or methods declarations here.

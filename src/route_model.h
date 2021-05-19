@@ -10,6 +10,7 @@
 class RouteModel : public Model {
 
   public:
+    // Routemodel has a subclass called Node which inherits from the Model-Struct also called Node
     class Node : public Model::Node {
       public:
         Node * parent = nullptr;
